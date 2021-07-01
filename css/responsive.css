@@ -1,0 +1,9 @@
+@media (max-width: 1100px){
+    /* header */
+    .header{
+        padding: 0 60px;
+    }
+    .lang-div{
+        margin-left: 28px;
+    }
+}
