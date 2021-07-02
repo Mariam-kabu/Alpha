@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="35.523" viewBox="0 0 141 35.523">
+  <g id="Group_199" data-name="Group 199" transform="translate(-326 -432.477)">
+    <g id="iconfinder_16-apple_104490_1_" data-name="iconfinder_16-apple_104490 (1)" transform="translate(317.685 428.103)">
+      <path id="Path_60" data-name="Path 60" d="M30.391,24.875c-.041-3.77,3.353-5.579,3.5-5.67a7.833,7.833,0,0,0-5.936-2.948c-2.527-.235-4.933,1.365-6.215,1.365s-3.26-1.33-5.355-1.3a8.069,8.069,0,0,0-6.715,3.733c-2.863,4.554-.732,11.3,2.057,15,1.364,1.807,2.99,3.839,5.124,3.765,2.056-.074,2.832-1.22,5.318-1.22s3.184,1.22,5.359,1.182c2.211-.037,3.613-1.841,4.966-3.655a15.871,15.871,0,0,0,2.248-4.234C34.7,30.874,30.435,29.377,30.391,24.875Z" transform="translate(0 -1.992)" fill="#fff"/>
+      <path id="Path_61" data-name="Path 61" d="M34.346,10.91a9.03,9.03,0,0,0,2.131-6.536,9.173,9.173,0,0,0-6.031,3.1,8.585,8.585,0,0,0-2.172,6.334A7.6,7.6,0,0,0,34.346,10.91Z" transform="translate(-7.911)" fill="#fff"/>
+    </g>
+    <text id="app_store" data-name="app store" transform="translate(467 463)" fill="#fff" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="-79.005" y="0">App Store</tspan></text>
+    <text id="Download_from" data-name="Download from" transform="translate(467 444)" fill="#fff" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-68.833" y="0">Download from</tspan></text>
+  </g>
+</svg>

@@ -4,6 +4,6 @@
       <circle cx="12" cy="12" r="12" stroke="none"/>
       <circle cx="12" cy="12" r="11.5" fill="none"/>
     </g>
-    <text id="EN" transform="translate(1166 29)" fill="#fff" font-size="10" font-family="FiraGO-Regular, FiraGO"><tspan x="-6.09" y="0">EN</tspan></text>
+    <text id="EN" transform="translate(1166 29)" fill="#fff" font-size="10" font-family="SegoeUI, Segoe UI"><tspan x="-6.27" y="0">EN</tspan></text>
   </g>
 </svg>

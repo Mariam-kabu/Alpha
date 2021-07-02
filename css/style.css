@@ -1,3 +1,6 @@
+body{
+    padding-top: 88px;
+}
 /* header */
 .header{
     display: flex;
@@ -27,16 +30,14 @@
     margin-left: 42px;
 }
 .lang{
-    border: 1px solid white;
-    border-radius: 50px;
-    font-size: 10px;
-    padding: 6px;
-    color: white;
-    text-transform: uppercase;
-    font-family: "BPG Nino Medium Caps", sans-serif;
+    width: 24px;
 }
-.active{
-    background-color: #E84F5B;
+.burger-bar{
+    display: none;
+    width: 38%;
+}
+.bar{
+    width: 46px;
 }
 .menu{
     display: flex;
@@ -98,4 +99,96 @@
 }
 .my-pro:hover{
     background-color: #b3434c;
+}
+
+/* footer */
+.footer{
+    background-color: #5C656B;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 112px;
+    filter: drop-shadow(1px 3px 6px #000000);
+}
+.logo-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 34px;
+}
+.f-logo{
+    height: 80.6px;
+}
+.soc-icon-box{
+    display: flex;
+    align-items: flex-start;
+}
+.soc-icon{
+    width: 40px;
+    margin-left: 10px;
+}
+.list-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.list-header, .mob-list-header{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 22px;
+}
+.f-li{
+    width: 152px;
+    margin-bottom: 13px;
+}
+.f-a{
+    font-size: 12px;
+    color: #CED1D3;
+}
+.app-box{
+    display: flex;
+}
+.li-app:last-child{
+    margin-left: 15px;
+}
+.li-app{
+    padding: 12px 17px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.app{
+    width: 140px;
+}
+.footer-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-li{
+    text-align: center;
+}
+.footer-a{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #CED1D3;
+}
+.mob{
+    display: none;
+}
+.mob-li-box{
+    display: none;
+}
+.mob-li{
+    width: 140px;
+    margin-bottom: 17px;
+    text-align: end;
+}
+.mob-a{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    line-height: 17px;
 }
