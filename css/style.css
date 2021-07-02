@@ -3,9 +3,6 @@ body{
 }
 /* header */
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: rgba(0, 0, 0, 0.340);
     padding: 0px 120px;
     position: fixed;
@@ -13,6 +10,14 @@ body{
     left: 0;
     z-index: 100;
     width: 100%;
+}
+.header-div{
+    max-width: 1130px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .icons{
     display: flex;
@@ -34,7 +39,9 @@ body{
 }
 .burger-bar{
     display: none;
-    width: 38%;
+    position: absolute;
+    top: 22px;
+    left: 20px;
 }
 .bar{
     width: 46px;
@@ -109,6 +116,11 @@ body{
     flex-direction: column;
     padding: 40px 112px;
     filter: drop-shadow(1px 3px 6px #000000);
+}
+.footer-div{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
 }
 .logo-box{
     display: flex;

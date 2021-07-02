@@ -16,16 +16,15 @@
 }
 @media (max-width: 1024px){
     body{
-        padding-top: 79px;
+        padding-top: 75px;
     }
     /* header */
     .header{
-        padding: 22px 35px;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
+        padding: 20px 15px;
     }
-    .icons{
-        width: 20%;
+    .header-div{
+        flex-direction: row-reverse;
+        justify-content: center;
     }
     .lang-div, .menu{
         display: none;
@@ -36,6 +35,14 @@
     /* footer */
     .footer{
         margin-bottom: 54px;
+        padding: 9px 20px 35px 20px;
+    }
+    .footer-div{
+        max-width: 750px;
+        width: 100%;
+    }
+    .logo-box{
+        justify-content: flex-start;
     }
     .soc-icon-box, .f-ul, .list-header, .list-box-2{
         display: none;
@@ -59,34 +66,16 @@
         display: flex;
         align-items: flex-start
     }
+    .soc-icon:first-child{
+        margin-left: 0;
+    }
 }
 @media (max-width: 596px){
-    /* header */
-    .burger-bar{
-        width: 30%;
-    }
-    .bar{
-        width: 28%;
-    }
-    .icons{
-        width: 40%;
-    }
-    .logo{
-        width: 100%;
-    }
     /* foooter */
     .app-box{
         flex-direction: column;
     }
     .li-app:last-child{
         margin-left: 0px;
-    }
-}
-@media (max-width: 496px){
-    /* header */
-    
-    /* footer */
-    .footer{
-        padding: 9px 20px 35px 20px;
     }
 }
