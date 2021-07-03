@@ -170,7 +170,8 @@ body{
     margin-bottom: 15px;
 }
 .app{
-    width: 140px;
+    max-width: 140px;
+    width: 100%;
 }
 .footer-ul{
     display: flex;
@@ -193,7 +194,7 @@ body{
     display: none;
 }
 .mob-li{
-    width: 140px;
+    max-width: 140px;
     margin-bottom: 17px;
     text-align: end;
 }

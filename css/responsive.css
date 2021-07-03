@@ -71,11 +71,5 @@
     }
 }
 @media (max-width: 596px){
-    /* foooter */
-    .app-box{
-        flex-direction: column;
-    }
-    .li-app:last-child{
-        margin-left: 0px;
-    }
+    
 }
