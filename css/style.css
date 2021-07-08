@@ -234,9 +234,9 @@
   bottom: 13%;
   max-width: 900px;
   width: 88%;
-  clip-path: polygon(0 0, 100% 0%, 93% 100%, 0% 100%);
   background-color: rgba(0, 0, 0, 0.4);
-  line-height: 30px;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
 }
 .text:hover{
   background-color: rgba(0, 0, 0, 0.603);
@@ -251,6 +251,7 @@
 }
 .slider-par{
   margin-top: 15px;
+  line-height: 30px;
 }
 /* The dots/bullets/indicators */
 .dot-box{
@@ -393,6 +394,9 @@
 .for-you-img{
   width: 100%;
   filter: brightness(0.5);
+}
+.for-you-img:hover{
+  filter: none;
 }
 .for-you-icon-div{
   position: absolute;
