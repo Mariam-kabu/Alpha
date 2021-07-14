@@ -21,3 +21,27 @@ function currentSlide(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
   }
+
+  var Index = 1;
+  displaySlides(Index);
+  
+  // Thumbnail image controls
+  function currentPage(a) {
+      displaySlides(Index = a);
+    }
+    
+    function displaySlides(a) {
+      var x;
+      var slide = document.getElementsByClassName("douSlides");
+      var dot = document.getElementsByClassName("douDot");
+      if (a > slide.length) {Index = 1}
+      if (a < 1) {Index = slide.length}
+      for (x = 0; x < slide.length; x++) {
+          slide[x].style.display = "none";
+      }
+      for (x = 0; x < dot.length; x++) {
+          dot[x].className = dot[x].className.replace(" active", "");
+      }
+      slide[Index-1].style.display = "block";
+      dot[Index-1].className += " active";
+    }

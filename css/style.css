@@ -263,8 +263,8 @@
 
 .dot {
   cursor: pointer;
-  height: 12px;
-  width: 12px;
+  height: 9px;
+  width: 9px;
   margin: 0 9px;
   background-color: #bbb;
   border-radius: 50%;
@@ -364,12 +364,13 @@
 .for-you-header{
   font-size: 48px;
   color: #110F0F;
-  margin-bottom: 2px;
+  margin-bottom: 23px;
 }
 .for-you-p{
   font-size: 16px;
   line-height: 30px;
   color: #110F0F;
+  margin-bottom: 25px;
 }
 
 .for-you-visual{
@@ -427,7 +428,8 @@
 }
 .horizontal-slider{
   margin: 0 auto;
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   height: 320px;
   overflow-y: hidden;
   overflow-x: auto;
@@ -488,6 +490,169 @@
   color: white;
   text-align: end;
 }
-.h-slider-li{
-  list-style:disc;
+.h-slider-li::after{
+  content: "•";
+  font-size: 14px;
+  color: white;
+  padding-left: 10px;
+}
+/* double slider section */
+.dou-slider-section{
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Slideshow container */
+.dou-slideshow-container {
+  margin: auto;
+}
+/* Hide the images by default */
+.douSlides {
+  display: none;
+  margin-bottom: 32px;
+}
+.dou-content-box{
+  display: flex;
+  justify-content: center;
+}
+.dou-box{
+  position: relative;
+}
+.dou-img{
+  max-width: 490px;
+  width: 100%;
+}
+.dou-icon{
+  position: absolute;
+  top: 28px;
+  left: 26px;
+  max-width: 72px;
+  width: 100%;
+}
+.right{
+  position: absolute;
+  top: 28px;
+  max-width: 72px;
+  width: 100%;
+  right: 60px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.dou-text{
+  color: #5C656B;
+  font-size: 24;
+  line-height: 30px;
+}
+/* The dots/bullets/indicators */
+.dot-box{
+  margin: 0 auto;
+}
+
+.douDot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 0 9px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #5C656B;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* exclusive packets section */
+.exclusive-section{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 69px 0;
+}
+.grey{
+  height: 255px;
+}
+.grey::-webkit-scrollbar-thumb{
+  background: #969ca0;
+}
+.grey::-webkit-scrollbar-thumb:hover{
+  background: #5C656B;
+}
+.grey-box{
+  background-color: #5C656B;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.grey-box:hover{
+  background: #969ca0;
+}
+.grey-logo{
+  position: static;
+}
+.grey-h{
+  font-size: 26px;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: white;
+}
+.grey-p{
+  text-align: left;
+}
+
+/* apps section */
+.apps-section{
+  background-image: url(../photo/apps.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 136px 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apps-text{
+  position: static;
+}
+.apps-div{
+  display: flex;
+  flex-direction: column;
+}
+.apps-par{
+  padding: 12px 17px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
