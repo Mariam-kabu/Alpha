@@ -679,13 +679,24 @@
 }
 /* drop down info section */
 .drop-down-info{
-  max-width: 1130px;
-  width: 80%;
-  margin: 15px auto;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.ddi-parent{
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .drop-down-info-container{
+  width: 80%;
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .di-img{
   width: 100%;
@@ -716,8 +727,7 @@
 
 /* first drop-down info */
 .ddi-box{
-  max-width: 1130px;
-  width: 100%;
+  width: 80%;
   margin: 15px auto;
   display: flex;
   justify-content: space-between;
@@ -752,11 +762,15 @@
 
 /* filialebi */
 .filialebi{
-  max-width: 1130px;
   width: 100%;
   margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 .destination-list-box{
+  width: 80%;
   font-size: 20px;
   color: #5C656B;
   display: flex;
@@ -789,6 +803,7 @@
 
 /* georgia map */
 .map-box{
+  max-width: 1400px;
   width: 100%;
   position: relative;
 }
