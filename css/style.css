@@ -522,6 +522,10 @@
 .dou-img{
   max-width: 490px;
   width: 100%;
+  filter: brightness(0.5);
+}
+.dou-img:hover{
+  filter: none;
 }
 .dou-icon{
   position: absolute;
@@ -655,4 +659,130 @@
   border: 1px solid white;
   border-radius: 10px;
   margin-bottom: 15px;
+}
+
+/* company page */
+/* banner - first section*/
+.company-banner{
+  width: 100%;
+  position: relative;
+}
+.banner-img{
+  width: 100%;
+}
+.direction{
+  position: absolute;
+  top: 24%;
+  left: 10%;
+  color: #ffffff;
+  font-size: 18px;
+}
+/* drop down info section */
+.drop-down-info{
+  max-width: 1130px;
+  width: 80%;
+  margin: 15px auto;
+}
+.drop-down-info-container{
+  position: relative;
+  margin-bottom: 23px;
+}
+.di-img{
+  width: 100%;
+  filter: brightness(50%);
+}
+.di-header{
+  position: absolute;
+  top: 27%;
+  left: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+}
+.di-icon{
+  max-width: 35px;
+  width: 100%;
+  margin-right: 25px;
+}
+.arrow{
+  max-width: 24px;
+  width: 100%;
+  position: absolute;
+  top: 33%;
+  right: 4%;
+}
+
+/* first drop-down info */
+.ddi-box{
+  max-width: 1130px;
+  width: 100%;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* display: none; */
+}
+.ddi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23px 31px;
+  border-radius: 10px;
+  background-color: #e84f5b;
+  color: white;
+  font-size: 20px;
+  max-width: 365px;
+  width: 100%;
+  margin-right: 15px;
+}
+.ddi:last-child{
+  margin-right: 0;
+}
+.ddi-img {
+  max-width: 50px;
+  width: 100%;
+  margin-right: 20px;
+}
+.ddi-a{
+  color: white;
+  font-size: 20px;
+}
+
+/* filialebi */
+.filialebi{
+  max-width: 1130px;
+  width: 100%;
+  margin: 15px auto;
+}
+.destination-list-box{
+  font-size: 20px;
+  color: #5C656B;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.destination-label{
+  margin-bottom: 15px;
+}
+.lists{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.info-input{
+  max-width: 256px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #E84F5B;
+  padding: 5px;
+  padding-left: 90px;
+  font-size: 18px;
+  color: #5C656B;
+  margin-bottom: 10px;
+}
+.info-input:focus{
+  outline: none;
 }
