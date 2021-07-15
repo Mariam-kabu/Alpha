@@ -40,8 +40,8 @@ function currentSlide(n) {
           slide[x].style.display = "none";
       }
       for (x = 0; x < dot.length; x++) {
-          dot[x].className = dot[x].className.replace(" active", "");
+          dot[x].className = dot[x].className.replace(" activate", "");
       }
       slide[Index-1].style.display = "block";
-      dot[Index-1].className += " active";
+      dot[Index-1].className += " activate";
     }
