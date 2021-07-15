@@ -681,10 +681,8 @@
 .drop-down-info{
   width: 100%;
   margin-top: 15px;
-  margin-bottom: 40px;
 }
 .ddi-parent{
-  /* margin: 0 auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -697,6 +695,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.drop-down-information{
+  width: 100%;
+  /* display: none; */
 }
 .di-img{
   width: 100%;
@@ -732,7 +734,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* display: none; */
 }
 .ddi{
   display: flex;
@@ -809,4 +810,149 @@
 }
 .map-img{
   width: 100%;
+}
+.loc-pin{
+  position: absolute;
+  bottom: 29%;
+  right: 34%;
+  width: 24px;
+  transform: translate(50%, 50%);
+}
+.logo-pin{
+  width: 31px;
+}
+.lagodexi{
+  position: absolute;
+  bottom: 39%;
+  right: 9%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-lagodexi{
+  right: 9%;
+  transform: translate(50%, 50%);
+  bottom: 73%;
+}
+.gurjaani{
+  position: absolute;
+  bottom: 29%;
+  right: 16%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-gurjaani{
+  right: 16%;
+  transform: translate(50%, 50%);
+  bottom: 62%;
+}
+.lagodexi-2{
+  position: absolute;
+  bottom: 39%;
+  right: 22%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-lagodexi-2{
+  right: 22%;
+  transform: translate(50%, 50%);
+  bottom: 93%;
+}
+.rustavi{
+  position: absolute;
+  bottom: 26%;
+  right: 28%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-rustavi{
+  right: 28%;
+  transform: translate(50%, 50%);
+  bottom: 51%;
+}
+.tbilisi{
+  position: absolute;
+  bottom: 32%;
+  right: 32%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-tbilisi{
+  right: 32%;
+  transform: translate(50%, 50%);
+  bottom: 78%;
+}
+.zestafoni{
+  position: absolute;
+  bottom: 42%;
+  right: 54%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-zestafoni{
+  right: 54%;
+  transform: translate(50%, 50%);
+  bottom: 73%;
+}
+.axalcixe{
+  position: absolute;
+  bottom: 26%;
+  right: 58%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-axalcixe{
+  right: 67%;
+  transform: translate(50%, 50%);
+  bottom: 36%;
+}
+.kutaisi{
+  position: absolute;
+  bottom: 50%;
+  right: 59%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-kutaisi{
+  right: 59%;
+  transform: translate(50%, 50%);
+  bottom: 61%;
+}
+.senaki{
+  position: absolute;
+  bottom: 53%;
+  right: 73%;
+  width: 31px; 
+  transform: translate(50%, 50%);
+}
+.ad-senaki{
+  right: 70%;
+  transform: translate(50%, 50%);
+  bottom: 84%;
+}
+.zugdidi{
+  position: absolute;
+  bottom: 61%;
+  right: 74%;
+  width: 31px;
+  transform: translate(50%, 50%);
+}
+.ad-zugdidi{
+  right: 74%;
+  transform: translate(50%, 50%);
+  bottom: 95%;
+}
+.address{
+  position: absolute;
+  font-size: 18px;
+  color: #5C656B;
+  line-height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px 50px;
+  filter: drop-shadow(0px 3px 6px);
+  text-align: center;
+}
+.address-span{
+  font-size: 20px;
+  color: #E84F5B;
 }
