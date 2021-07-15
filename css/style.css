@@ -235,7 +235,7 @@
   max-width: 900px;
   width: 88%;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
+  border-radius: 10px 0 10px 10px;
   clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
 }
 .text:hover{
@@ -785,4 +785,13 @@
 }
 .info-input:focus{
   outline: none;
+}
+
+/* georgia map */
+.map-box{
+  width: 100%;
+  position: relative;
+}
+.map-img{
+  width: 100%;
 }
