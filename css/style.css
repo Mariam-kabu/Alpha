@@ -305,9 +305,8 @@
 
 .hover-contact{
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 0%;
-  transform: translate(0, -50%);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -321,7 +320,7 @@
   width: 3%;
   border-radius: 5px;
   margin-bottom: 5px;
-  padding: 0.5%;
+  padding: 8px;
 }
 .hover-a{
   color: white;
@@ -329,8 +328,7 @@
   display: none;
 }
 .con-img{
-  max-width: 29px;
-  width: 100%;
+  width: 29px;
   margin-right: 11px;
 }
 .con-content:hover{
@@ -413,6 +411,7 @@
   color: #5C656B;
   margin-top: 18px;
   width: 100%;
+  text-align: center;
 }
 
 /* main page - horizontal slider */
@@ -676,6 +675,7 @@
   left: 10%;
   color: #ffffff;
   font-size: 18px;
+  text-decoration: underline;
 }
 /* drop down info section */
 .drop-down-info{
@@ -698,7 +698,7 @@
 }
 .drop-down-information{
   width: 100%;
-  /* display: none; */
+  padding-bottom: 40px;
 }
 .di-img{
   width: 100%;
@@ -821,128 +821,19 @@
 .logo-pin{
   width: 31px;
 }
-.lagodexi{
+.location{
   position: absolute;
-  bottom: 39%;
-  right: 9%;
-  width: 31px;
   transform: translate(50%, 50%);
-}
-.ad-lagodexi{
-  right: 9%;
-  transform: translate(50%, 50%);
-  bottom: 73%;
-}
-.gurjaani{
-  position: absolute;
-  bottom: 29%;
-  right: 16%;
-  width: 31px;
-  transform: translate(50%, 50%);
-}
-.ad-gurjaani{
-  right: 16%;
-  transform: translate(50%, 50%);
-  bottom: 62%;
-}
-.lagodexi-2{
-  position: absolute;
-  bottom: 39%;
-  right: 22%;
-  width: 31px;
-  transform: translate(50%, 50%);
-}
-.ad-lagodexi-2{
-  right: 22%;
-  transform: translate(50%, 50%);
-  bottom: 93%;
-}
-.rustavi{
-  position: absolute;
-  bottom: 26%;
-  right: 28%;
-  width: 31px;
-  transform: translate(50%, 50%);
-}
-.ad-rustavi{
-  right: 28%;
-  transform: translate(50%, 50%);
-  bottom: 51%;
-}
-.tbilisi{
-  position: absolute;
-  bottom: 32%;
-  right: 32%;
-  width: 31px;
-  transform: translate(50%, 50%);
-}
-.ad-tbilisi{
-  right: 32%;
-  transform: translate(50%, 50%);
-  bottom: 78%;
-}
-.zestafoni{
-  position: absolute;
-  bottom: 42%;
-  right: 54%;
-  width: 31px;
-  transform: translate(50%, 50%);
-}
-.ad-zestafoni{
-  right: 54%;
-  transform: translate(50%, 50%);
-  bottom: 73%;
-}
-.axalcixe{
-  position: absolute;
-  bottom: 26%;
-  right: 58%;
-  width: 31px;
-  transform: translate(50%, 50%);
-}
-.ad-axalcixe{
-  right: 67%;
-  transform: translate(50%, 50%);
-  bottom: 36%;
-}
-.kutaisi{
-  position: absolute;
-  bottom: 50%;
-  right: 59%;
-  width: 31px;
-  transform: translate(50%, 50%);
-}
-.ad-kutaisi{
-  right: 59%;
-  transform: translate(50%, 50%);
-  bottom: 61%;
-}
-.senaki{
-  position: absolute;
-  bottom: 53%;
-  right: 73%;
-  width: 31px; 
-  transform: translate(50%, 50%);
-}
-.ad-senaki{
-  right: 70%;
-  transform: translate(50%, 50%);
-  bottom: 84%;
-}
-.zugdidi{
-  position: absolute;
-  bottom: 61%;
-  right: 74%;
-  width: 31px;
-  transform: translate(50%, 50%);
-}
-.ad-zugdidi{
-  right: 74%;
-  transform: translate(50%, 50%);
-  bottom: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .address{
   position: absolute;
+  max-width: 218px;
+  width: 100%;
+}
+.ad-style{
   font-size: 18px;
   color: #5C656B;
   line-height: 30px;
@@ -955,4 +846,343 @@
 .address-span{
   font-size: 20px;
   color: #E84F5B;
+}
+.vertical{
+  background-color: #E84F5B;
+  width: 2px;
+  height: 100px;
+  margin: 0 auto;
+}
+.lagodexi{
+  bottom: 39%;
+  right: 9%;
+}
+.ad-lagodexi{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 410%;
+  display: none;
+}
+.lagodexi:hover{
+  max-width: 218px;
+  width: 100%;
+}
+.lagodexi:hover .ad-lagodexi{
+  display: block;
+}
+.gurjaani{
+  bottom: 29%;
+  right: 16%;
+}
+.ad-gurjaani{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 470%;
+  display: none;
+}
+.gurjaani:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.gurjaani:hover .ad-gurjaani{
+  display: block;
+} 
+.lagodexi-2{
+  bottom: 39%;
+  right: 22%;
+}
+.ad-lagodexi-2{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 410%;
+  display: none;
+}
+.lagodexi-2:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.lagodexi-2:hover .ad-lagodexi-2{
+  display: block; 
+}
+.rustavi{
+  bottom: 26%;
+  right: 28%;
+}
+.ad-rustavi{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 480%;
+  display: none;
+}
+.rustavi:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.rustavi:hover .ad-rustavi{
+  display: block;
+}
+.tbilisi{
+  bottom: 32%;
+  right: 32%;
+}
+.ad-tbilisi{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 710%;
+  display: none;
+}
+.tbilisi:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.tbilisi:hover .ad-tbilisi{
+  display: block;
+}
+.zestafoni{
+  bottom: 42%;
+  right: 54%;
+}
+.ad-zestafoni{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 480%;
+  display: none;
+}
+.zestafoni:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.zestafoni:hover .ad-zestafoni{
+  display: block;
+}
+.axalcixe{
+  bottom: 26%;
+  right: 58%;
+}
+.ad-axalcixe{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 480%;
+  display: none;
+}
+.axalcixe:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.axalcixe:hover .ad-axalcixe{
+  display: block;
+}
+.kutaisi{
+  bottom: 50%;
+  right: 59%;
+}
+.ad-kutaisi{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 480%;
+  display: none;
+}
+.kutaisi:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.kutaisi:hover .ad-kutaisi{
+  display: block;
+}
+.senaki{
+  bottom: 53%;
+  right: 73%;
+}
+.ad-senaki{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 480%;
+  display: none;
+}
+.senaki:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.senaki:hover .ad-senaki{
+  display: block;
+}
+.zugdidi{
+  bottom: 61%;
+  right: 74%;
+}
+.ad-zugdidi{
+  right: 50%;
+  transform: translate(50%, 50%);
+  bottom: 420%;
+  display: none;
+}
+.zugdidi:hover{
+  max-width: 218px;
+  width: 100%;
+  z-index: 1;
+}
+.zugdidi:hover .ad-zugdidi{
+  display: block;
+}
+/* our history drop down */
+.time-line{
+  width: 100%;
+  position: relative;
+}
+.years-div{
+  max-width: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto 50px auto;
+}
+.year{
+  padding: 30px;
+  background-color: #E84F5B;
+  border: thin solid #E84F5B;
+  color: white;
+  font-size: 28px;
+  border-radius: 10px;
+  z-index: 1;
+}
+.year:hover{
+  background-color: white;
+  border: thin solid #E84F5B;
+  color: #E84F5B;
+}
+.clicked{
+  background-color: white;
+  border: thin solid #E84F5B;
+  color: #E84F5B;
+}
+.hr-line{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 935px;
+  width: 100%;
+  border: 0.5px solid #E84F5B;
+}
+.story{
+  margin: 0 auto;
+  max-width: 890px;
+  width: 70%;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #5C656B;
+  /* display: none; */
+}
+.opend .story{
+  display: block;
+}
+
+/* car insurance page */
+.car-insurance{
+  margin: 25px auto;
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.insurance{
+  margin: 25px auto;
+  width: 83%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ins-form{
+  max-width: 1083px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 3px 6px black;
+  border-radius: 10px;
+}
+.ins-text, .ins-span{
+  margin-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+}
+.ins-list-box{
+  max-width: 460px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px auto 65px;
+}
+.ins-lists{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.ins-ul{
+  margin: 15px auto;
+}
+.ins-li{
+  font-size: 16px;
+  line-height: 28px;
+  list-style: disc;
+}
+.ins-offers{
+  max-width: 460px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.offer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 17px;
+}
+.offer-icon{
+  width: 84px;
+  height: 84px;
+  border: thin solid #E84F5B;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer-span{
+  font-size: 20px;
+  line-height: 30px;
+  color: #E84F5B;
+  text-align: center;
+}
+.insu-button{
+  width: 290px;
+  margin: 15px auto;
+  font-size: 32px;
+  line-height: 60px;
+  background-color: #E84F5B;
+  border: #E84F5B;
+  color: white;
+  border-radius: 50px;
+  padding: 10px auto;
+}
+.insu-button:focus{
+  outline: none;
 }
