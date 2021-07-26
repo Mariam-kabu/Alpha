@@ -49,16 +49,16 @@ function currentPage(a) {
     dot[Index-1].className += " activate";
   }
 
-
-// company page
+//company page
 const year = document.querySelectorAll('.year');
-year.forEach(function(date, key){
-  date.addEventListener('click', function(){
-    date.classList.add("opend");
-    year.forEach(function(time, Index){
-      if (key != index){
-        time.classList.remove('opend');
-      }
-    })
-  })
-})
+        year.forEach(function(el, key){                
+            el.addEventListener('click', function () {
+                el.classList.add("opened");
+                    
+                year.forEach(function(ell, index){
+                    if(key !== index) {
+                        ell.classList.remove('opened');
+                    }
+                });
+            });
+        });
