@@ -48,17 +48,3 @@ function currentPage(a) {
     slide[Index-1].style.display = "block";
     dot[Index-1].className += " activate";
   }
-
-//company page
-const year = document.querySelectorAll('.year');
-        year.forEach(function(el, key){                
-            el.addEventListener('click', function () {
-                el.classList.add("opened");
-                    
-                year.forEach(function(ell, index){
-                    if(key !== index) {
-                        ell.classList.remove('opened');
-                    }
-                });
-            });
-        });

@@ -700,6 +700,10 @@
   width: 100%;
   padding-top: 20px;
   padding-bottom: 40px;
+  display: none;
+}
+.drop-down.drop-down-information{
+  display: block;
 }
 .di-img{
   width: 100%;
@@ -850,6 +854,9 @@
   color: #E84F5B;
 }
 .vertical{
+  position: absolute;
+  top: 100%;
+  left: 50%;
   background-color: #E84F5B;
   width: 2px;
   height: 100px;
@@ -862,7 +869,7 @@
 .ad-lagodexi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 410%;
+  bottom: 610%;
   display: none;
 }
 .lagodexi:hover{
@@ -879,7 +886,7 @@
 .ad-gurjaani{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 470%;
+  bottom: 670%;
   display: none;
 }
 .gurjaani:hover{
@@ -897,7 +904,7 @@
 .ad-lagodexi-2{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 410%;
+  bottom: 610%;
   display: none;
 }
 .lagodexi-2:hover{
@@ -915,7 +922,7 @@
 .ad-rustavi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 480%;
+  bottom: 670%;
   display: none;
 }
 .rustavi:hover{
@@ -933,7 +940,7 @@
 .ad-tbilisi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 710%;
+  bottom: 910%;
   display: none;
 }
 .tbilisi:hover{
@@ -951,7 +958,7 @@
 .ad-zestafoni{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 480%;
+  bottom: 670%;
   display: none;
 }
 .zestafoni:hover{
@@ -969,7 +976,7 @@
 .ad-axalcixe{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 480%;
+  bottom: 670%;
   display: none;
 }
 .axalcixe:hover{
@@ -987,7 +994,7 @@
 .ad-kutaisi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 480%;
+  bottom: 670%;
   display: none;
 }
 .kutaisi:hover{
@@ -1005,7 +1012,7 @@
 .ad-senaki{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 480%;
+  bottom: 670%;
   display: none;
 }
 .senaki:hover{
@@ -1023,7 +1030,7 @@
 .ad-zugdidi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 420%;
+  bottom: 610%;
   display: none;
 }
 .zugdidi:hover{
@@ -1083,10 +1090,9 @@
   transform: translate(50%, 50%);
   position: absolute;
 }
-.opened.story{
+.story.opened{
   display: block;
 }
-
 /* car insurance page */
 .car-insurance{
   margin: 25px auto;
