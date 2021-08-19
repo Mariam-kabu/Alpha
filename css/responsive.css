@@ -69,16 +69,37 @@
 }
 @media (max-width: 884px){
     /* main-slider section */
+    .text{
+        padding: 5px 5%;
+    }
+    .slider-header{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    .slider-par{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 7px;
+    }
+    .con-content{
+        width: 3%;
+    }
     .con-content:hover{
         width: 20%;
-      }
+    }
+    .con-img{
+        width: 20px;
+    }
 }
 @media (max-width: 768px){
+    .logo{
+        width: 100px;
+    }
     /* header */
     .header{
         padding: 8px 3px;
     }
-    .logo{
+    .logo img{
         width: 100px;
     }
     .bar{
@@ -101,13 +122,249 @@
     .hover-a{
         font-size: 13.5px;
     }
+    /* for you section index page */
+    .for-you-p{
+        display: none;
+    }
+    .for-you-visual{
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 1100px;
+        width: 100%;
+        height: 180px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+    .for-you-visual::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+    .visual-part{
+        width: 40%;
+        margin-right: 26px;
+    }
+    .for-you-img-box{
+        width: 148px;
+    }
+    .for-you-icon-div{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .visual-text{
+        text-align: left;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    /* main page - horizontal slider */
+    .horizontal-slider-section{
+        padding: 20px 0;
+    }
+    .horizontal-slider-header{
+        color: #e84f5b;
+        padding: 10px 15px;
+    }
+    .horizontal-slider{
+        margin: 0 auto;
+        max-width: 1100px;
+        width: 100%;
+        height: 600px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h-slider-box{
+        max-width: 365px;
+        width: 80%;
+        margin-right: 0;
+    }
+    .horizontal-slider::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+    /* your business section on main page */
+    .dou-slider-div{
+        display: none;
+    }
+    .dou-slider-section{
+        width: 90%;
+    }
+    .dou-slider-mob{
+        width: 100%;
+        display: block;
+    }
+    .dou-slider-mob-div{
+        max-width: 1100px;
+        width: 100%;
+        height: 230px;
+        overflow-y: hidden;
+        overflow-x: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .dou-slider-mob-div::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+    /* gery slider */
+    .grey{
+        height: 150px;
+    }
+    .grey::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+    .grey-box{
+        align-items: flex-end;
+        height: 140px;
+        margin-right: 19px;
+    }
+    .grey-logo{
+        position: absolute;
+    }
+    .grey-h{
+        text-align: end;
+        margin-top: 0px;
+    }
+    /* apps section- main page */
+    .apps-section{
+        display: none;
+    }
+
+    /* car insurance page */
+    /* first section */
+    .direction{
+        display: none;
+    }
+    /* second section */
+    .car-insurance{
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 90%;
+        width: 100%;
+        height: 180px;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .car-insurance::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+    }
+    .car-insIcon{
+        width: 34px; 
+        top: 25px; 
+        left: 25px;
+    }
+    .carInsIcon{
+        width: 35px;
+    }
+    /* insurance section */
+    .insurance{
+        display: none;
+    }
+    .mobile-insurance-section{
+        display: block;
+    }
+    .ins-offers{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .offer-span{
+        font-size: 16px;
+    }
+    /* last section */
+    .car-slider{
+        margin: 10px auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .car-ins-logo, .car-ins-p{
+        display: none;
+    }
+    .car-ins-h{
+        margin-top: 0px;
+    }
+    .car-ins-img{
+        max-width: 45%;
+    }
+    /* company page */
 }
-@media (max-width: 470px){
+@media (max-width: 576px){
+    .con-content{
+        width: 7%;
+    }
+    .con-content:hover{
+        width: 30%;
+    }
+    /* car insurance slider */
+    .car-ins-slider{
+        width: auto;
+    }
+    /* company page */
+    .di-header{
+        font-size: 20px;
+    }
+}
+@media (max-width: 400px){
+    .logo{
+        width: 90px;
+    }
+    .logo img{
+        width: 90px;
+    }
+    .bar{
+        width: 18px;
+    }
     /* main-slider section */
     .con-content{
-        width: 6%;
+        width: 9%;
     }
     .con-content:hover{
         width: 40%;
-      }
+    }
+    .slider-header{
+        font-size: 14px;
+    }
+    .slider-par{
+        font-size: 12px;
+    }
+    .dot{
+        height: 4px;
+        width: 4px;
+    }
+    /* for you section */
+    .for-you-header{
+        font-size: 20px;
+    }
+    .for-you-intro{
+        margin-bottom: 0;
+    }
+    .for-you-img{
+        width: 130px;
+    }
+    .for-you-icon{
+        width: 50px;
+    }
+    /* horizontal slider section */
+    .horizontal-slider-header{
+        font-size: 16px;
+    }
+    .slider-logo{
+        width: 30px;
+    }
+    .h-slider-h, .grey-h{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .h-slider-p{
+        font-size: 12px;
+        width: 180px;
+    }
 }

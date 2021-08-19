@@ -21,8 +21,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.logo {
+.logo-a {
   width: 144px;
+}
+.logo{
+  width: 100%;
 }
 .lang-div {
   width: 55px;
@@ -341,7 +344,8 @@
 
 /* main page - for you section */
 .for-you-section{
-  margin-top: 56px;
+  width: 90%;
+  margin: 56px auto;
   display: flex;
   justify-content: center;
 }
@@ -374,7 +378,7 @@
 .for-you-visual{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 .visual-part{
@@ -417,13 +421,13 @@
 /* main page - horizontal slider */
 .horizontal-slider-section{
   max-width: 1100px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding: 69px 0;
 }
 .horizontal-slider-header{
   font-size: 32px;
-  padding: 50px 0;
+  padding: 50px 15px;
 }
 .horizontal-slider{
   margin: 0 auto;
@@ -435,7 +439,7 @@
   display: flex;
 }
 .horizontal-slider::-webkit-scrollbar{
-  width: 1124px;
+  width: 90%;
   height: 10px;
 }
 .horizontal-slider::-webkit-scrollbar-track{
@@ -595,6 +599,15 @@
     opacity: 1;
   }
 }
+.dou-slider-mob{
+  display: none;
+}
+.dou-slider-mob-div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
 
 /* exclusive packets section */
 .exclusive-section{
@@ -604,9 +617,25 @@
   padding: 69px 0;
 }
 .grey{
+  max-width: 1100px;
+  width: 90%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  display: flex;
   height: 255px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.grey::-webkit-scrollbar{
+  width: 80%;
+  height: 10px;
+}
+.grey::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px #5C656B; 
+  border-radius: 10px;
 }
 .grey::-webkit-scrollbar-thumb{
+  border-radius: 10px;
   background: #969ca0;
 }
 .grey::-webkit-scrollbar-thumb:hover{
@@ -617,6 +646,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
 }
 .grey-box:hover{
   background: #969ca0;
@@ -633,6 +663,7 @@
 }
 .grey-p{
   text-align: left;
+  padding: 0 10px;
 }
 
 /* apps section */
@@ -691,6 +722,7 @@
 }
 .drop-down-info-container{
   width: 80%;
+  height: 61px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -704,6 +736,7 @@
 }
 .di-img{
   width: 100%;
+  height: 100%;
   filter: brightness(50%);
 }
 .di-header{
@@ -1197,6 +1230,10 @@
 .insu-button:focus{
   outline: none;
 }
+
+.mobile-insurance-section{
+  display: none;
+}
 /* slider */
 .car-slider{
   max-width: 2000px;
@@ -1224,6 +1261,9 @@
 }
 .car-ins-logo{
   position: absolute;
+}
+.car-ins-h{
+  margin-top: 50px;
 }
 
 /* acquire page */
