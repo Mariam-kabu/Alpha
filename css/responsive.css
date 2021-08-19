@@ -243,7 +243,7 @@
     }
     /* second section */
     .car-insurance{
-        margin: 0 auto;
+        margin: 15px auto;
         padding: 0 15px;
         max-width: 90%;
         width: 100%;
@@ -276,7 +276,7 @@
         justify-content: center;
     }
     .offer-span{
-        font-size: 16px;
+        font-size: 14px;
     }
     /* last section */
     .car-slider{

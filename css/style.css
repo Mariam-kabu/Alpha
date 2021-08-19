@@ -1166,7 +1166,7 @@
   margin: 15px auto 65px;
 }
 .ins-lists{
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1233,6 +1233,36 @@
 
 .mobile-insurance-section{
   display: none;
+}
+.insurance-lists{
+  margin: 20px auto;
+  width: 90%;
+  height: auto;
+}
+.insuli-div{
+  margin: 8px auto;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px black;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.insulogo{
+  width: 29px;
+}
+.insuarrow{
+  width: 12px;
+  transform: rotate(180deg);
+}
+.insuli-span{
+  font-size: 14px;
+  line-height: 20px;
+  color: #e84f5b;
+  text-align: center;
+  width: 160px;
 }
 /* slider */
 .car-slider{
