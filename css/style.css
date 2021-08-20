@@ -1076,7 +1076,53 @@
   width: 100%;
   position: relative;
 }
-.years-div{
+        .container {
+            padding: 2%;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .box {
+            display: none;
+            background-color: blanchedalmond;
+            /* overflow-y: scroll; */
+            position: absolute;
+            width: 70%;
+            height: 90%;
+            border: 3px solid aquamarine;
+            border-left: 6px solid aquamarine;
+            border-right: 1px solid aquamarine;
+            border-radius: 5px;
+            right: 2px;
+            top: 50%;
+            transform: translate(0, -50%);
+            padding: 5px;
+            z-index: 9;
+        }
+        .active .box {
+            display: block;
+        }
+        .element {
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            margin: 10px;
+            padding: 5px 5px;
+            background-color: antiquewhite;
+            max-height: 110px;
+        }
+        .active {
+            background-color: aquamarine;
+        }
+        .element span {
+            padding: 2% 2%;
+            width: 30%;
+            margin: 10px 10px;
+            white-space: nowrap;
+        }
+ .years-div{
   max-width: 80%;
   width: 100%;
   display: flex;
@@ -1107,6 +1153,7 @@
   width: 75%;
   border: 0.5px solid #E84F5B;
 }
+
 .story{
   display: none;
   max-width: 890px;
@@ -1120,7 +1167,7 @@
   transform: translate(50%, 50%);
   position: absolute;
 }
-.story.opened{
+.opened.story{
   display: block;
 }
 /* car insurance page */
