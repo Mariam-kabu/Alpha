@@ -1,3 +1,17 @@
+//burger bar overlay manu
+const parentList = document.querySelectorAll(".overlay-li");
+parentList.forEach(div => {
+  var presentList = div.querySelector(".oli-div");
+  var hiddenList = div.querySelector(".child-oul");
+  presentList.addEventListener('click', ()=>{
+    if(hiddenList.style.display == 'block'){
+      hiddenList.style.display = 'none';
+    }else{
+      hiddenList.style.display = 'block';
+    }
+  })
+});
+
 // main page first slider
 var slideIndex = 1;
 showSlides(slideIndex);

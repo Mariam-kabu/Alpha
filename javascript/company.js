@@ -10,15 +10,25 @@ divParent.forEach(div => {
         }
     })
 });
-const year = document.querySelectorAll('.element');
-        element.forEach(function(el, key){                
-            el.addEventListener('click', function () {
-                el.classList.add("opened");
-                    
-                element.forEach(function(ell, index){
-                    if(key !== index) {
-                        ell.classList.remove('opened');
-                    }
-                });
-            });
-        });
+
+var yearBox = document.getElementById("yearDiv");
+var date =document.getElementsByClassName(".year");
+for(var i=0; i<date.length; i++){
+    date[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName(".active");
+        current[0].className = current[0].className.replace(" .active", "");
+        this.className += " .active";
+    });
+}
+
+const element = document.querySelectorAll(".year");
+element.forEach(function(x, key){
+    x.addEventListener('click', function(){
+        x.classList.add("open");
+        element.forEach(function(z, index){
+            if(key != index){
+                z.classList.remove("open");
+            }
+        })
+    })
+})

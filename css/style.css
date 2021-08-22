@@ -37,15 +37,116 @@
 .lang {
   width: 24px;
 }
+/* mobile menu bar */
 .burger-bar {
   display: none;
   position: absolute;
-  top: 22px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
 }
 .bar {
   width: 46px;
 }
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.togggle-logo{
+  height: 39px;
+}
+.toggle-logo img{
+  height: 37px;
+}
+.logo-spn{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #5c656b;
+  vertical-align: text-bottom;
+}
+.search-div{
+  margin: 20px auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.search-input{
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  color: #e84f5b;
+  padding: 7px 30px 7px 15px;
+  border: thin solid #e84f5b;
+  border-radius: 30px;
+}
+.search-input:focus{
+  outline: none;
+}
+.search-div img{
+  position: absolute;
+  height: 24px;
+  top: 21%;
+  right: 3.5%;
+}
+.overlay-li{
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  padding: 10px 21px;
+}
+.oli-div{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.oli-icon{
+  width: 24px;
+  margin-right: 28px;
+}
+.oli-a{
+  font-size: 16px;
+  color: #000000;
+  vertical-align: text-bottom;
+}
+.oli-arrow{
+  position: absolute;
+  width: 12px;
+  top: 20px;
+  right: 10%;
+}
+.child-oul{
+  display: none;
+  padding: 12px 0;
+}
+.child-oli{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6px 0;
+}
+.child-oli a{
+  vertical-align: text-bottom;
+  color: #5C656B;
+  text-decoration: underline;
+  font-size: 15px;
+}
+.child-oli img{
+  margin-right: 29px;
+  width: 20px;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -1076,52 +1177,6 @@
   width: 100%;
   position: relative;
 }
-        .container {
-            padding: 2%;
-            margin: 0 auto;
-            background-color: antiquewhite;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-        .box {
-            display: none;
-            background-color: blanchedalmond;
-            /* overflow-y: scroll; */
-            position: absolute;
-            width: 70%;
-            height: 90%;
-            border: 3px solid aquamarine;
-            border-left: 6px solid aquamarine;
-            border-right: 1px solid aquamarine;
-            border-radius: 5px;
-            right: 2px;
-            top: 50%;
-            transform: translate(0, -50%);
-            padding: 5px;
-            z-index: 9;
-        }
-        .active .box {
-            display: block;
-        }
-        .element {
-            display: flex;
-            flex-direction: row;
-            cursor: pointer;
-            margin: 10px;
-            padding: 5px 5px;
-            background-color: antiquewhite;
-            max-height: 110px;
-        }
-        .active {
-            background-color: aquamarine;
-        }
-        .element span {
-            padding: 2% 2%;
-            width: 30%;
-            margin: 10px 10px;
-            white-space: nowrap;
-        }
  .years-div{
   max-width: 80%;
   width: 100%;
@@ -1131,16 +1186,15 @@
   margin: 0 auto 50px auto;
 }
 .year{
+  color: white;
+  font-size: 28px;
   padding: 30px;
   background-color: #E84F5B;
   border: thin solid #E84F5B;
-  color: white;
-  font-size: 28px;
   border-radius: 10px;
   z-index: 1;
-  cursor: pointer;
 }
-.year:hover{
+.active, .year:hover{
   background-color: white;
   border: thin solid #E84F5B;
   color: #E84F5B;
@@ -1167,7 +1221,7 @@
   transform: translate(50%, 50%);
   position: absolute;
 }
-.opened.story{
+.open.story{
   display: block;
 }
 /* car insurance page */
