@@ -1,3 +1,6 @@
+body{
+  background-color: #F6F6F6;
+}
 /* header */
 .header {
   background-color: rgba(0, 0, 0, 0.34);
@@ -47,9 +50,20 @@
 .bar {
   width: 46px;
 }
+/* overlay manu */
+.overlay-menu{
+  display: none;
+  overflow: hidden;
+}
+.overlay-menu.open{
+  display: block;
+}
+.overlay-menu.open.closed{
+  display: none;
+}
 .overlay{
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -82,6 +96,7 @@
   width: 100%;
   height: 40px;
   font-size: 20px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   color: #e84f5b;
   padding: 7px 30px 7px 15px;
   border: thin solid #e84f5b;
@@ -95,6 +110,10 @@
   height: 24px;
   top: 21%;
   right: 3.5%;
+}
+.overlay-nav{
+  border-bottom: thin solid #5C656B;
+  padding-bottom: 20px;
 }
 .overlay-li{
   width: 100%;
@@ -116,6 +135,7 @@
   margin-right: 28px;
 }
 .oli-a{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 16px;
   color: #000000;
   vertical-align: text-bottom;
@@ -125,6 +145,9 @@
   width: 12px;
   top: 20px;
   right: 10%;
+}
+.oli-arrow.dropDown{
+  transform: rotate(180deg);
 }
 .child-oul{
   display: none;
@@ -141,12 +164,14 @@
   color: #5C656B;
   text-decoration: underline;
   font-size: 15px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
 }
 .child-oli img{
   margin-right: 29px;
   width: 20px;
 }
 
+/* regular menu */
 .menu {
   display: flex;
   justify-content: space-between;
@@ -192,6 +217,7 @@
 }
 .drop-down-a {
   display: flex;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 20px;
   margin-left: 25px;
   color: #e84f5b;
@@ -207,6 +233,51 @@
 }
 .my-pro:hover {
   background-color: #b3434c;
+}
+
+.responsive-nav{
+  width: 100%;
+  height: 56px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.466));
+}
+.resp-nav{
+  width: 100%;
+  height: 100%;
+  background-color: #ffff;
+  display: flex;
+  align-items: center;
+}
+.respons-ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.respons-ul li{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+}
+.nav-img{
+  width: 24px;
+  height: 24px;
+}
+.responsive-a{
+  display: flex;
+  justify-content: center;
+  color: #5C656B;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
 }
 
 /* footer */
@@ -247,6 +318,7 @@
 }
 .list-header,
 .mob-list-header {
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 18px;
   color: white;
   margin-bottom: 22px;
@@ -256,6 +328,7 @@
   margin-bottom: 13px;
 }
 .f-a {
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 12px;
   color: #ced1d3;
 }
@@ -284,6 +357,7 @@
   text-align: center;
 }
 .footer-a {
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 14px;
   font-weight: bold;
   text-decoration: underline;
@@ -301,6 +375,7 @@
   text-align: end;
 }
 .mob-a {
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: white;
@@ -332,6 +407,7 @@
 /* Caption text */
 .text {
   color: #f2f2f2;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 18px;
   padding: 30px 10%;
   position: absolute;
@@ -344,9 +420,10 @@
 }
 .text:hover{
   background-color: rgba(0, 0, 0, 0.603);
-}  
+}
 .slider-header{
   display: inline-block;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 32px;
   font-weight: bold;
   color: white;
@@ -428,11 +505,12 @@
 }
 .hover-a{
   color: white;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 15px;
   display: none;
 }
 .con-img{
-  width: 29px;
+  max-width: 29px;
   margin-right: 11px;
 }
 .con-content:hover{
@@ -465,11 +543,13 @@
   margin-bottom: 35px;
 }
 .for-you-header{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 48px;
   color: #110F0F;
   margin-bottom: 23px;
 }
 .for-you-p{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 16px;
   line-height: 30px;
   color: #110F0F;
@@ -511,6 +591,7 @@
   
 }
 .visual-text{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: #5C656B;
@@ -527,6 +608,7 @@
   padding: 69px 0;
 }
 .horizontal-slider-header{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 32px;
   padding: 50px 15px;
 }
@@ -555,7 +637,7 @@
   background: #e84f5b;
 }
 .h-slider-box{
-  width: 365px;
+  max-width: 365px;
   background-color: #f57781;
   border-radius: 10px;
   position: relative;
@@ -581,6 +663,7 @@
   width: 100%;
 }
 .h-slider-h{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 26px;
   line-height: 39px;
   color: #ffffff;
@@ -588,6 +671,7 @@
   margin-bottom: 58px;
 }
 .h-slider-p{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   width: 280px;
   font-size: 14px;
   line-height: 23px;
@@ -599,6 +683,7 @@
   font-size: 14px;
   color: white;
   padding-left: 10px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
 }
 /* double slider section */
 .dou-slider-section{
@@ -622,9 +707,10 @@
 }
 .dou-box{
   position: relative;
+  width: 490px;
+  max-width: 50%;
 }
 .dou-img{
-  max-width: 490px;
   width: 100%;
   filter: brightness(0.5);
 }
@@ -652,6 +738,7 @@
 }
 /* Caption text */
 .dou-text{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   color: #5C656B;
   font-size: 24;
   line-height: 30px;
@@ -756,6 +843,7 @@
   position: static;
 }
 .grey-h{
+  font-family: "BPG Nino Medium Caps", sans-serif;
   font-size: 26px;
   margin-top: 35px;
   margin-bottom: 10px;
@@ -796,7 +884,12 @@
 /* banner - first section*/
 .company-banner{
   width: 100%;
+  height: 650px;
   position: relative;
+  background-image: url(../photo/company-banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .banner-img{
   width: 100%;
@@ -807,22 +900,28 @@
   left: 10%;
   color: #ffffff;
   font-size: 18px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   text-decoration: underline;
 }
 /* drop down info section */
 .drop-down-info{
+  max-width: 1200px;
   width: 100%;
-  margin-top: 15px;
+  margin: 15px auto;
 }
 .ddi-parent{
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
+  max-width: 100%;
+  width: 80%;
+  border-radius: 6px;
 }
 .drop-down-info-container{
-  width: 80%;
+  width: 100%;
   height: 61px;
   position: relative;
   display: flex;
@@ -848,6 +947,7 @@
   justify-content: center;
   align-items: center;
   font-size: 25px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   color: white;
 }
 .di-icon{
@@ -880,8 +980,10 @@
   background-color: #e84f5b;
   color: white;
   font-size: 20px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   max-width: 365px;
   width: 100%;
+  height: 100px;
   margin-right: 15px;
 }
 .ddi:last-child{
@@ -895,6 +997,7 @@
 .ddi-a{
   color: white;
   font-size: 20px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
 }
 
 /* filialebi */
@@ -909,6 +1012,7 @@
 .destination-list-box{
   width: 80%;
   font-size: 20px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   color: #5C656B;
   display: flex;
   justify-content: space-between;
@@ -923,23 +1027,30 @@
   flex-direction: column;
   align-items: flex-end;
 }
+.info-input1,
 .info-input{
   max-width: 256px;
   width: 100%;
   border-radius: 10px;
   border: 1px solid #E84F5B;
   padding: 5px;
-  /* padding-left: 90px; */
   font-size: 18px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   color: #5C656B;
   margin-bottom: 10px;
   text-align-last: right;
 }
-.info-input:focus{
+.info-input1:focus{
   outline: none;
 }
 
 /* georgia map */
+.embeded-map{
+  width: 98%;
+  height: 315px;
+  display: none;
+  margin-top: 130px;
+}
 .map-box{
   max-width: 1400px;
   width: 100%;
@@ -972,6 +1083,7 @@
 }
 .ad-style{
   font-size: 18px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   color: #5C656B;
   line-height: 30px;
   background-color: white;
@@ -982,6 +1094,7 @@
 }
 .address-span{
   font-size: 20px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   color: #E84F5B;
 }
 .vertical{
@@ -1000,7 +1113,7 @@
 .ad-lagodexi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 610%;
+  bottom: 670%;
   display: none;
 }
 .lagodexi:hover{
@@ -1035,7 +1148,7 @@
 .ad-lagodexi-2{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 610%;
+  bottom: 670%;
   display: none;
 }
 .lagodexi-2:hover{
@@ -1071,7 +1184,7 @@
 .ad-tbilisi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 910%;
+  bottom: 1020%;
   display: none;
 }
 .tbilisi:hover{
@@ -1161,7 +1274,7 @@
 .ad-zugdidi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 610%;
+  bottom: 670%;
   display: none;
 }
 .zugdidi:hover{
@@ -1183,18 +1296,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 60px auto;
 }
 .year{
   color: white;
   font-size: 28px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   padding: 30px;
   background-color: #E84F5B;
   border: thin solid #E84F5B;
   border-radius: 10px;
   z-index: 1;
 }
-.active, .year:hover{
+.year:hover{
+  background-color: white;
+  border: thin solid #E84F5B;
+  color: #E84F5B;
+}
+.open.year{
   background-color: white;
   border: thin solid #E84F5B;
   color: #E84F5B;
@@ -1213,21 +1332,27 @@
   max-width: 890px;
   width: 70%;
   font-size: 20px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   line-height: 30px;
   text-align: center;
   color: #5C656B;
-  top: 100%;
   right: 50%;
+  top: 80%;
   transform: translate(50%, 50%);
   position: absolute;
 }
-.open.story{
+.open.year .story{
   display: block;
 }
 /* car insurance page */
+.carInsurance-banner{
+  height: 650px;
+  background-image: url(../photo/car-insurance-banner.png);
+}
 .car-insurance{
   margin: 25px auto;
-  width: 83%;
+  max-width: 1110px;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1243,23 +1368,26 @@
 .ins-form{
   max-width: 1083px;
   width: 90%;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 3px 6px #5C656B;
   border-radius: 10px;
+  background-color: #ffffff;
 }
 .ins-text, .ins-span{
   margin-top: 27px;
   text-align: center;
   font-size: 16px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   line-height: 27px;
   color: #000000;
 }
 .ins-list-box{
   max-width: 460px;
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1277,12 +1405,13 @@
 }
 .ins-li{
   font-size: 16px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   line-height: 28px;
   list-style: disc;
 }
 .ins-offers{
   max-width: 460px;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1305,6 +1434,7 @@
 }
 .offer-span{
   font-size: 20px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   line-height: 30px;
   color: #E84F5B;
   text-align: center;
@@ -1316,6 +1446,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
 }
 .insu-button{
   width: 100%;
@@ -1323,6 +1454,7 @@
   color: white;
   cursor: pointer;
   font-size: 32px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   line-height: 60px;
   background-color: #E84F5B;
   border: #E84F5B;
@@ -1346,6 +1478,9 @@
   height: auto;
   border-radius: 10px;
   box-shadow: 0 3px 6px black;
+  background-color: #fff;
+}
+.insuli-box{
   padding: 16px;
   display: flex;
   justify-content: space-between;
@@ -1360,11 +1495,31 @@
 }
 .insuli-span{
   font-size: 14px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
   line-height: 20px;
   color: #e84f5b;
   text-align: center;
   width: 160px;
 }
+.insuli-dropdown-box{
+  margin-top: 10px;
+  padding: 0 10px 20px 10px;
+  display: none;
+}
+.insuli-dropdown-box.open{
+  display: block;
+}
+.insuli-box.open .insuarrow{
+  transform: rotate(180deg);
+}
+.insuli-par{
+  font-size: 14px;
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  line-height: 27px;
+  color: #000000;
+  text-align: center;
+}
+
 /* slider */
 .car-slider{
   max-width: 2000px;
@@ -1397,145 +1552,366 @@
   margin-top: 50px;
 }
 
-/* acquire page */
-/* steps section */
-.steps-section{
-  margin: 0 auto;
-  width: 83%;
-  position: relative;
-  height: 1300px;
+/* My Office page */
+.myOffice-body{
+  background-image: url(../photo/download.png);
+  background-repeat: no-repeat;
+  background-size: unset;
+  background-position: 100% 50%;
 }
-.steps-box{
+.office-banner{
+  background-image: url(../photo/myoffice.png);
+  background-position: center;
+  background-size: cover;
+  height: 385px;
+  margin-bottom: 130px;
+}
+.text2{
+  font-size: 18px; 
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  text-decoration: underline; 
+  top: 30%; 
+  bottom: 50%; 
+  padding: 30px 142px;
+  max-width: 541px;
+  width: 100%; 
+  color: #f2f2f2;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px 0 10px 10px;
+  clip-path: polygon(0 0, 100% 0%, 96% 100%, 0% 100%);
+}
+.text2:hover{
+  background-color: rgba(0, 0, 0, 0.603);
+}
+.resp-text2{
+  display: none;
+}
+.profile-box{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1110px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.personal-info{
+  display: flex;
+  align-items: flex-end;
+}
+.profile-pic{
+  width: 153px;
+}
+.sign-in{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 13px;
+}
+.name{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 25px;
+  line-height: 38px;
+  color: #110F0F;
+}
+.edit{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #110F0F;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+.exit-add-box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+.exit-add-box span{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #110F0F;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+.login{
+  display: none;
+  width: 24px;
+  margin-bottom: 18px;
+}
+
+/* active policies */
+.active-policies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
+}
+.policy-header{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 28px;
+  color: #E84F5B;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+.policy-box{
+  max-width: 1110px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 15px;
+}
+.policy{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ED939A;
+  border-radius: 10px;
+  position: relative;
+}
+.policy:last-child:hover{
+  background-color: #E84F5B;
+}
+.property-insurance-policy{
+  background-color: unset;
+  background-image: url(../photo/property.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.car-insurance-policy{
+  background-color: unset;
+  background-image: url(../photo/car-insu.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.policy-child{
+  width: 100%;
+  height: 100px;
+  padding: 12px 20px 18px 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
 }
-.step{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 93px;
-  padding: 30px;
+.resp-policy-icon{
+  display: none;
+  width: 35px;
+}
+.policy-type{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 25px;
+  line-height: 38px;
+  color: #ffffff;
+}
+.resp-arrow{
+  display: none;
+}
+.policy-line{
+  position: absolute;
+  width: 88%;
+  height: 1px;
   background-color: #ffff;
-  border: thin solid #E84F5B;
-  color: #E84F5B;
-  font-size: 28px;
-  border-radius: 10px;
-  z-index: 1;
-  cursor: pointer;
+  top: 88px;
 }
-.step:hover{
-  background-color: #E84F5B;
-  border: thin solid #E84F5B;
-  color: #ffff;
-}
-.step:first-child{
-  background-color: #E84F5B;
-  border: thin solid #E84F5B;
-  color: #ffff;
-}
-.st-span{
-  position: absolute;
-  top: 110px;
-  font-size: 20px;
-  line-height: 27px;
-  color: #5C656B;
-  text-align: center;
-}
-.step-content{
-  position: absolute;
-  top: 210px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.step-cont{
+.hover-policy{
+  display: none;
+  margin: 0 auto;
   width: 100%;
-  box-shadow: 0 3px 6px #5C656B;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 58px;
 }
-.step-cont-text{
-  font-size: 22px;
-  line-height: 30px;
-  color: #000000;
-  margin-bottom: 30px;
-}
-.step-input-lable{
-  font-size: 20px;
-  line-height: 27px;
-  color: #5C656B;
-  text-align: center;
-}
-.step-form{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 15px;
-}
-.form-input-div{
-  display: grid;
-  grid-template-columns: auto;
-  position: relative;
-}
-.step-lable{
-  color: #5c656b;
-  font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 15px;
-  text-align: start;
-}
-.input-vert-span{
-  background-color: #E84F5B;
-  height: 36px;
-  width: 1px;
-  position: absolute;
-  right: 23%;
-  top: 46%;
-}
-.step-form-input{
-  max-width: 300px;
-  height: 36px;
-  border: thin solid #E84F5B;
-  border-radius: 10px;
-  color: #969ca0;
-  font-size: 20px;
-  line-height: 27px;
-  padding: 5px 12px;
-  margin-bottom: 10px;
-}
-.step-form-input:focus{
-  outline: none;
-}
-.input-icon{
-  position: absolute;
-  right: 3%;
-  bottom: 15%;
-}
-.input-icon:hover .mark-span{
+.policy:hover .hover-policy{
   display: block;
 }
-.mark-span{
-  color: white;
-  background-color: #E84F5B;
+.property-insurance-policy:hover{
+  height: fit-content;
+}
+.car-insurance-policy:hover{
+  height: fit-content;
+}
+.property-insurance{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 34px;
+  background-color: #fff;
   border-radius: 10px;
-  font-size: 14px;
-  line-height: 19px;
-  padding: 3px 15px;
-  width: 175px;
-  position: absolute;
-  right: -40%;
-  top: 120%;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.proprtyy-insu-header{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #5C656B;
+  margin-bottom: 17px;
+}
+.properti-info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 15px;
+}
+.name2,
+.deadline,
+.policy-number{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  color: #5C656B;
+}
+.price-tag{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  margin-top: 13px;
+  font-size: 22px;
+  line-height: 30px;
+  color: #E84F5B;
+}
+.payment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment-bttn-a{
+  width: 78%;
+  height: 49px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+.payment-bttn{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #ffff;
+  font-size: 24px;
+  border-radius: 30px;
+  background-color: #E84F5B;
+  border: unset;
+}
+.edit-payment{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: underline;
+  font-style: italic;
+  color: #5C656B;
+  margin-top: 13px;
+}
+.terms-box{
+  width: 90%;
+  margin: 18px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 13px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.terms{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 11px;
+}
+.terms-icon{
+  width: 60px;
+  margin-right: 30px;
+}
+.terms-a{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #5C656B;
+}
+.myOffice-insoffers{
+  width: 90%;
+  padding: 20px 0 0 0;
+  display: none;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.history{
+  display: none;
+  margin-bottom: 7px;
+}
+.history div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.history-icon{
+  width: 27px;
+  margin-right: 6px;
+}
+.history span{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffff;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+/* info shortcuts */
+.info-shortcuts-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto 100px auto;
+}
+.shortcuts-box{
+  max-width: 950px;
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.shortcut{
+  max-width: 270px;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.shortcut-icon-box{
+  background-color: #D0616C;
+  max-width: 184px;
+  width: 68%;
+  height: 147px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0 0, 100% 0%, 84% 100%, 0% 100%);
+  border-radius: 10px 0 20px 10px;
+}
+.shortcut-icon{
+  width: 60px;
+}
+.shortcut-name{
+  font-family: "BPG Nino Medium Caps", sans-serif;
+  font-size: 25px;
+  line-height: 39px;
+  color: #5C656B;
+}
+
+/* slider */
+.myoffice-slider-header{
+  color: #5C656B;
   display: none;
 }

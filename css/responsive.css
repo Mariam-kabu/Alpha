@@ -1,4 +1,36 @@
-@media (max-width: 1124px){
+@media (max-width: 2000px){
+    .con-content{
+        width: 2%;
+    }
+    .con-img{
+        width: 100%;
+    }
+    /* company pg */
+    .year{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .story{
+        transform: translate(50%, 40%);
+    }
+}
+@media (max-width: 1500px){
+    .con-content{
+        width: 3%;
+    }
+    .con-img{
+        width: 100%;
+    }
+    /* my office */
+    .terms-icon{
+        width: 40px;
+        margin-right: 15px;
+      }
+    .terms-a{
+        font-size: 18px;
+    }
+}
+@media (max-width: 1150px){
     /* header */
     .header{
         padding: 0 60px;
@@ -13,6 +45,19 @@
     .li-app:last-child{
         margin-left: 0px;
     }
+    .con-content{
+        width: 4.3%;
+    }
+    /* company */
+    .year{
+        font-size: 18px;
+        padding: 15px;
+    }
+    .story{
+        width: 80%;
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 @media (max-width: 1024px){
     /* header */
@@ -26,7 +71,24 @@
     .lang-div, .menu{
         display: none;
     }
+    .lang-div{
+        margin: 10px 21px;
+        width: fit-content;
+    }
+    .lang{
+        width: 39px;
+    }
     .burger-bar{
+        display: block;
+    }
+    .bar{
+        width: 30px;
+    }
+    .burger-bar {
+        top: 27px;
+        left: 10px;
+    }
+    .responsive-nav{
         display: block;
     }
     /* footer */
@@ -66,6 +128,46 @@
     .soc-icon:first-child{
         margin-left: 0;
     }
+    /* company page */
+    .ddi{
+        width: 33%;
+        height: 70px;
+    }
+    .ddi-img{
+        width: 31px;
+    }
+    .ddi-a{
+        font-size: 16px;
+    }
+    .year{
+        font-size: 18px;
+        padding: 12px;
+    }
+    .story{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* my office page */
+    .policy-box{
+        grid-template-columns: 1fr 1fr;
+    }
+    .shortcuts-box{
+        justify-content: center;
+    }
+    .shortcut{
+        align-items: center;
+    }
+    .shortcut-icon-box{
+        width: 89px;
+        height: 70px;
+    }
+    .shortcut-icon{
+        width: 40px;
+    }
+    .shortcut-name {
+        font-size: 16px;
+    }
 }
 @media (max-width: 884px){
     /* main-slider section */
@@ -81,14 +183,17 @@
         line-height: 18px;
         margin-top: 7px;
     }
-    .con-content{
-        width: 3%;
-    }
     .con-content:hover{
         width: 20%;
     }
-    .con-img{
-        width: 20px;
+    /* company */
+    .year{
+        font-size: 18px;
+        padding: 8px;
+    }
+    /* my office */
+    .profile-box{
+        top: 110%;
     }
 }
 @media (max-width: 768px){
@@ -108,7 +213,7 @@
     .burger-bar {
         top: 12px;
         left: 10px;
-      }
+    }
     /* main-slider section */
     .con-content{
         width: 5%;
@@ -123,6 +228,9 @@
         font-size: 13.5px;
     }
     /* for you section index page */
+    .for-you-section{
+        margin: auto;
+    }
     .for-you-p{
         display: none;
     }
@@ -144,7 +252,8 @@
     }
     .visual-part{
         width: 40%;
-        margin-right: 26px;
+        margin-right: 3em;
+        margin-bottom: 0;
     }
     .for-you-img-box{
         width: 148px;
@@ -161,26 +270,29 @@
     }
     /* main page - horizontal slider */
     .horizontal-slider-section{
-        padding: 20px 0;
+        padding: 0;
     }
     .horizontal-slider-header{
         color: #e84f5b;
         padding: 10px 15px;
     }
+    .insu-hori-h{
+        display: none;
+    }
     .horizontal-slider{
-        margin: 0 auto;
+        margin: 40px auto;
         max-width: 1100px;
         width: 100%;
-        height: 600px;
-        overflow-y: auto;
         overflow-x: hidden;
+        overflow-y: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .carslider{
+        height: 580px;
+    }
     .h-slider-box{
-        max-width: 365px;
-        width: 80%;
         margin-right: 0;
     }
     .horizontal-slider::-webkit-scrollbar{
@@ -201,7 +313,6 @@
     .dou-slider-mob-div{
         max-width: 1100px;
         width: 100%;
-        height: 230px;
         overflow-y: hidden;
         overflow-x: auto;
         display: flex;
@@ -214,6 +325,7 @@
     /* gery slider */
     .grey{
         height: 150px;
+        padding: 0;
     }
     .grey::-webkit-scrollbar{
         width: 0;
@@ -231,9 +343,201 @@
         text-align: end;
         margin-top: 0px;
     }
+    .exclusive-section{
+        padding: 0 0 35px 0;
+    }
     /* apps section- main page */
     .apps-section{
         display: none;
+    }
+    /* company page */
+    .company-banner{
+        height: 380px;
+    }
+    .story{
+        transform: translate(50%, 10%);
+        width: 100%;
+    }
+    .year{
+        font-size: 14px;
+        padding: 5px;
+    }
+    .map-box{
+        display: none;
+    }
+    .ddi-parent:first-child{
+        background-image: url(../photo/pexels-photo.png), url(../photo/pexels-photo1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode:darken;
+    }
+    .img2{
+        display: none;
+    }
+    .drop-down-information{
+        padding-bottom: unset;
+        position: relative;
+    }
+    .ddi-box{
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: -8px;
+        left: 22px;
+    }
+    .ddi{
+        width: 62px;
+        height: 45px;
+        margin-bottom: 15px;
+    }
+    .ddi-img{
+        margin-right: unset;
+    }
+    .ddi-a{
+        display: none;
+    }
+    .destination-list-box{
+        justify-content: flex-end;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+    .dl-responsive{
+        display: none;
+    }
+    .destination-label{
+        color: #fff;
+        font-size: 16px;
+    }
+    .info-input1{
+        border: unset;
+        background-color: rgba(255, 255, 255, 0.514);
+        color: #fff;
+        font-size: 14px;
+    }
+    .info-input{
+        background-color: rgba(255, 255, 255, 0.514);
+        font-size: 14px;
+    }
+    .embeded-map{
+        display: block;
+    }
+
+    /* my office */
+    .myOffice-body{
+        background-image: unset;
+    }
+    .office-banner{
+        height: 224px;
+    }
+    .policy-header{
+        text-decoration: none;
+    }
+    .text2{
+        text-decoration: none;
+        padding: 10px 12%;
+    }
+    .text2-span{
+        display: none;
+    }
+    .resp-text2{
+        display: block;
+        font-size: 15px;
+        border-bottom: thin solid #e84f5b;
+        padding-bottom: 4px;
+        margin-top: 1px;
+    } 
+    .profile-box{
+        width: 90%;
+        top: 100%;
+    } 
+    .profile-pic{
+        width: 96px;
+    }
+    .name{
+        font-size: 16px;
+        line-height: 24px;
+    }  
+    .edit{
+        font-size: 12px;
+        margin-bottom: 0;
+        line-height: 20px;
+    }
+    .exit,
+    .add{
+        display: none;
+    }
+    .login{
+        display: block;
+    }
+    .policy-box{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .policy{
+        background-image: unset;
+        filter: drop-shadow(1px 3px 6px #000000);
+    }
+    .policy-child{       
+        background-color: #fff;
+    }
+    .policy-icon{
+        display: none;
+    }
+    .resp-policy-icon{
+        display: block;
+    }
+    .policy-type{
+        color: #5C656B;
+        font-size: 20px;
+        text-align: center;
+    }
+    .policy-line{
+        display: none;
+    }
+    .drop{
+        display: none;
+    }
+    .resp-arrow{
+        display: block;
+    }
+    .hover-policy{
+        margin-top: 10px;
+        border-radius: 10px;
+        background-image: url(../photo/property.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .terms-box{
+        display: none;
+    }
+    .myOffice-insoffers{
+        display: block;
+    }
+    .history{
+        display: block;
+    }
+    .shortcuts-box{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .shortcut-name {
+        text-align: center;
+        line-height: 17px;
+        font-size: 12px;
+    }
+    .info-shortcuts-section{
+        margin-bottom: 30px;
+    }
+    .myoffice-slider-header{
+        color: #5C656B;
+        display: block;
+    }
+    .grey-h{
+        width: 200px;
+        text-align: end;
     }
 
     /* car insurance page */
@@ -280,6 +584,7 @@
     }
     /* last section */
     .car-slider{
+        height: fit-content;
         margin: 10px auto;
         display: flex;
         justify-content: flex-start;
@@ -290,26 +595,58 @@
     }
     .car-ins-h{
         margin-top: 0px;
+        line-height: 26px;
+        font-size: 23px;
     }
     .car-ins-img{
         max-width: 45%;
     }
-    /* company page */
+
 }
 @media (max-width: 576px){
+    .hover-contact{
+        top: 32%;
+    }
+    .mySlides img{
+        height: 40vh;
+    }
     .con-content{
-        width: 7%;
+        width: 8%;
     }
     .con-content:hover{
         width: 30%;
     }
-    /* car insurance slider */
+    /* car insurance */
+    .carInsIcon{
+        width: 35px;
+    }
     .car-ins-slider{
-        width: auto;
+        width: 74%;
+    }
+    .car-slider{
+        padding: 10px 0;
     }
     /* company page */
     .di-header{
         font-size: 20px;
+    }
+    .ddi-parent{
+        width: 90%;
+    }
+    .hr-line{
+        width: 90%;
+    }
+    .years-div{
+        margin-bottom: 115px;
+        max-width: 100%;
+    }
+    /* for you section */
+    .for-you-header{
+        font-size: 32px;
+    }
+    .year{
+        padding: 2px;
+        border-radius: 5px;
     }
 }
 @media (max-width: 400px){
@@ -366,5 +703,14 @@
     .h-slider-p{
         font-size: 12px;
         width: 180px;
+    }
+    /* grey slider */
+    .grey-h{
+        width: 150px;
+    }
+    
+    /* car insurance */
+    .carInsIcon{
+        width: 35px;
     }
 }
