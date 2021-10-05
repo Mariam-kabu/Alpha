@@ -290,7 +290,9 @@
         align-items: center;
     }
     .carslider{
-        height: 580px;
+        height: fit-content;
+        overflow: hidden;
+        padding-bottom: 30px;
     }
     .h-slider-box{
         margin-right: 0;
@@ -596,7 +598,7 @@
     .car-ins-h{
         margin-top: 0px;
         line-height: 26px;
-        font-size: 23px;
+        font-size: 17px;
     }
     .car-ins-img{
         max-width: 45%;
@@ -708,7 +710,10 @@
     .grey-h{
         width: 150px;
     }
-    
+    .car-ins-h{
+        line-height: 20px;
+        font-size: 15px;
+    }
     /* car insurance */
     .carInsIcon{
         width: 35px;
