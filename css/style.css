@@ -1113,7 +1113,7 @@ body{
 .ad-lagodexi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 670%;
+  bottom: 610%;
   display: none;
 }
 .lagodexi:hover{
@@ -1148,7 +1148,7 @@ body{
 .ad-lagodexi-2{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 670%;
+  bottom: 610%;
   display: none;
 }
 .lagodexi-2:hover{
@@ -1184,7 +1184,7 @@ body{
 .ad-tbilisi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 1020%;
+  bottom: 900%;
   display: none;
 }
 .tbilisi:hover{
@@ -1274,7 +1274,7 @@ body{
 .ad-zugdidi{
   right: 50%;
   transform: translate(50%, 50%);
-  bottom: 670%;
+  bottom: 610%;
   display: none;
 }
 .zugdidi:hover{
